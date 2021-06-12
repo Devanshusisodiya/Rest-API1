@@ -4,4 +4,4 @@ from .models import Hero
 class HeroSerializer(serializers.ModelSerializer):
     class Meta:
         model = Hero
-        fields = '__all__'
+        fields = ('name', 'superpower')
