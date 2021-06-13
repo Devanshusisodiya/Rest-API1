@@ -25,7 +25,7 @@ SECRET_KEY = 'daofj3r+g!2ef8%9jsr6pg&x+01-udfjfs+h9s^5q9hg!gia^0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['heroapp27.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['heroapp26.herokuapp.com', 'heroapp27.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -84,9 +84,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'decentralizeddb',
-        'CLIENT': {
-            'host': 'mongodb+srv://test_user:test_password@cluster0.vwzh7.mongodb.net/decentralizeddb?retryWrites=true&w=majority'
-        },
+        'HOST': 'mongodb+srv://test_user:test_password@cluster0.vwzh7.mongodb.net/decentralizeddb?retryWrites=true&w=majority',
+        'USER': 'test_user',
+        'PASSWORD': 'test_password'
     }
 }
 
