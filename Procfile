@@ -1,0 +1,1 @@
+web: gunicorn decentralized_api.wsgi
