@@ -19,6 +19,7 @@ from api_base import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.startUpPage),
     path('get-heros/', views.getHerosAll, name="getHerosAll"),
     path('post-hero/', views.postHero, name='postHero')
 ]

@@ -13,10 +13,12 @@ def getHerosAll(request):
     serializer = HeroSerializer(heros, many=True)
     return Response(serializer.data)
 
-@csrf_exempt
 @api_view(['POST'])
 def postHero(request):
     serializer = HeroSerializer(data=request.data)
     if serializer.is_valid():
         serializer.save()
     return Response(serializer.data)    
+
+def startUpPage(request):
+    return Response("API Starting Up")
