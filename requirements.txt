@@ -8,3 +8,4 @@ markdown
 django-filter
 django-cors-headers
 dnspython
+boto
