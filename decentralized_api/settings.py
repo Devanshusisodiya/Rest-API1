@@ -86,8 +86,9 @@ DATABASES = {
         'NAME': 'decentralizeddb',
         'CLIENT': {
             'host': 'mongodb+srv://test_user:test_password@cluster0.vwzh7.mongodb.net/decentralizeddb?retryWrites=true&w=majority',
-            # 'user': 'test_user',
-            # 'password': 'test_password'
+            'user': 'test_user',
+            'password': 'test_password',
+            'authMechanism': 'SCRAM-SHA-1'
             }
     }
 }
