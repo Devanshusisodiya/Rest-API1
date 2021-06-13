@@ -19,6 +19,6 @@ def postHero(request):
     if serializer.is_valid():
         serializer.save()
     return Response(serializer.data)    
-
+@api_view(['GET'])
 def startUpPage(request):
     return Response("API Starting Up")
