@@ -84,9 +84,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'decentralizeddb',
-        'HOST': 'mongodb+srv://test_user:test_password@cluster0.vwzh7.mongodb.net/decentralizeddb?retryWrites=true&w=majority',
-        'USER': 'test_user',
-        'PASSWORD': 'test_password'
+        'CLIENT': {
+            'host': 'mongodb+srv://test_user:test_password@cluster0.vwzh7.mongodb.net/decentralizeddb?retryWrites=true&w=majority',
+            'user': 'test_user',
+            'password': 'test_password'}
     }
 }
 
