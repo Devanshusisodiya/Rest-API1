@@ -3,3 +3,7 @@ gunicorn
 django-heroku
 djongo
 pymongo
+djangorestframework
+markdown
+django-filter
+corsheaders
