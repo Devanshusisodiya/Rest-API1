@@ -82,14 +82,8 @@ WSGI_APPLICATION = 'decentralized_api.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'decentralizeddb',
-        'CLIENT': {
-            'host': 'mongodb+srv://test_user:test_password@cluster0.vwzh7.mongodb.net/decentralizeddb?retryWrites=true&w=majority',
-            'user': 'test_user',
-            'password': 'test_password',
-            'authMechanism': 'SCRAM-SHA-1'
-            }
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
